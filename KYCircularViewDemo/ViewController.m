@@ -29,7 +29,7 @@
     [self setupKYCircularView2];
     [self setupKYCircularView3];
     
-    [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(updateProgress:) userInfo:nil repeats:YES];
 }
 
 - (void)setupKYCircularView1
