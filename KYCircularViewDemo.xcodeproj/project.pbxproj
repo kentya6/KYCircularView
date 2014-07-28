@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE5925831986921300B84B22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5925821986921300B84B22 /* main.m */; };
+		BE5925861986921300B84B22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5925851986921300B84B22 /* AppDelegate.m */; };
+		BE5925891986921300B84B22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5925881986921300B84B22 /* ViewController.m */; };
+		BE59258C1986921300B84B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE59258A1986921300B84B22 /* Main.storyboard */; };
+		BE59258E1986921300B84B22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE59258D1986921300B84B22 /* Images.xcassets */; };
+		BE59259A1986921300B84B22 /* KYCircularViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5925991986921300B84B22 /* KYCircularViewDemoTests.m */; };
+		BE5925A51986923400B84B22 /* KYCircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5925A41986923400B84B22 /* KYCircularView.m */; };
+		BE5925A71986927C00B84B22 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE5925A61986927C00B84B22 /* background.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE5925941986921300B84B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5925751986921300B84B22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE59257C1986921300B84B22;
+			remoteInfo = KYCircularViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE59257D1986921300B84B22 /* KYCircularViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYCircularViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5925811986921300B84B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5925821986921300B84B22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE5925841986921300B84B22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE5925851986921300B84B22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE5925871986921300B84B22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE5925881986921300B84B22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE59258B1986921300B84B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE59258D1986921300B84B22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE5925931986921300B84B22 /* KYCircularViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYCircularViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5925981986921300B84B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5925991986921300B84B22 /* KYCircularViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYCircularViewDemoTests.m; sourceTree = "<group>"; };
+		BE5925A31986923400B84B22 /* KYCircularView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYCircularView.h; sourceTree = "<group>"; };
+		BE5925A41986923400B84B22 /* KYCircularView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYCircularView.m; sourceTree = "<group>"; };
+		BE5925A61986927C00B84B22 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE59257A1986921300B84B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5925901986921300B84B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE5925741986921300B84B22 = {
+			isa = PBXGroup;
+			children = (
+				BE59257F1986921300B84B22 /* KYCircularViewDemo */,
+				BE5925961986921300B84B22 /* KYCircularViewDemoTests */,
+				BE59257E1986921300B84B22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE59257E1986921300B84B22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE59257D1986921300B84B22 /* KYCircularViewDemo.app */,
+				BE5925931986921300B84B22 /* KYCircularViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE59257F1986921300B84B22 /* KYCircularViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BE5925841986921300B84B22 /* AppDelegate.h */,
+				BE5925851986921300B84B22 /* AppDelegate.m */,
+				BE5925871986921300B84B22 /* ViewController.h */,
+				BE5925881986921300B84B22 /* ViewController.m */,
+				BE5925A31986923400B84B22 /* KYCircularView.h */,
+				BE5925A41986923400B84B22 /* KYCircularView.m */,
+				BE59258A1986921300B84B22 /* Main.storyboard */,
+				BE5925A61986927C00B84B22 /* background.jpg */,
+				BE59258D1986921300B84B22 /* Images.xcassets */,
+				BE5925801986921300B84B22 /* Supporting Files */,
+			);
+			path = KYCircularViewDemo;
+			sourceTree = "<group>";
+		};
+		BE5925801986921300B84B22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE5925811986921300B84B22 /* Info.plist */,
+				BE5925821986921300B84B22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE5925961986921300B84B22 /* KYCircularViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE5925991986921300B84B22 /* KYCircularViewDemoTests.m */,
+				BE5925971986921300B84B22 /* Supporting Files */,
+			);
+			path = KYCircularViewDemoTests;
+			sourceTree = "<group>";
+		};
+		BE5925971986921300B84B22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE5925981986921300B84B22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE59257C1986921300B84B22 /* KYCircularViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE59259D1986921300B84B22 /* Build configuration list for PBXNativeTarget "KYCircularViewDemo" */;
+			buildPhases = (
+				BE5925791986921300B84B22 /* Sources */,
+				BE59257A1986921300B84B22 /* Frameworks */,
+				BE59257B1986921300B84B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYCircularViewDemo;
+			productName = KYCircularViewDemo;
+			productReference = BE59257D1986921300B84B22 /* KYCircularViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE5925921986921300B84B22 /* KYCircularViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5925A01986921300B84B22 /* Build configuration list for PBXNativeTarget "KYCircularViewDemoTests" */;
+			buildPhases = (
+				BE59258F1986921300B84B22 /* Sources */,
+				BE5925901986921300B84B22 /* Frameworks */,
+				BE5925911986921300B84B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5925951986921300B84B22 /* PBXTargetDependency */,
+			);
+			name = KYCircularViewDemoTests;
+			productName = KYCircularViewDemoTests;
+			productReference = BE5925931986921300B84B22 /* KYCircularViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE5925751986921300B84B22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Yokoyama Kengo";
+				TargetAttributes = {
+					BE59257C1986921300B84B22 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					BE5925921986921300B84B22 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = BE59257C1986921300B84B22;
+					};
+				};
+			};
+			buildConfigurationList = BE5925781986921300B84B22 /* Build configuration list for PBXProject "KYCircularViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE5925741986921300B84B22;
+			productRefGroup = BE59257E1986921300B84B22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE59257C1986921300B84B22 /* KYCircularViewDemo */,
+				BE5925921986921300B84B22 /* KYCircularViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE59257B1986921300B84B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE59258C1986921300B84B22 /* Main.storyboard in Resources */,
+				BE5925A71986927C00B84B22 /* background.jpg in Resources */,
+				BE59258E1986921300B84B22 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE5925911986921300B84B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5925791986921300B84B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5925891986921300B84B22 /* ViewController.m in Sources */,
+				BE5925861986921300B84B22 /* AppDelegate.m in Sources */,
+				BE5925831986921300B84B22 /* main.m in Sources */,
+				BE5925A51986923400B84B22 /* KYCircularView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE59258F1986921300B84B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE59259A1986921300B84B22 /* KYCircularViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE5925951986921300B84B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE59257C1986921300B84B22 /* KYCircularViewDemo */;
+			targetProxy = BE5925941986921300B84B22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE59258A1986921300B84B22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE59258B1986921300B84B22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE59259B1986921300B84B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE59259C1986921300B84B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE59259E1986921300B84B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = KYCircularViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE59259F1986921300B84B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = KYCircularViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE5925A11986921300B84B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KYCircularViewDemo.app/KYCircularViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KYCircularViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		BE5925A21986921300B84B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KYCircularViewDemo.app/KYCircularViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KYCircularViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE5925781986921300B84B22 /* Build configuration list for PBXProject "KYCircularViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE59259B1986921300B84B22 /* Debug */,
+				BE59259C1986921300B84B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE59259D1986921300B84B22 /* Build configuration list for PBXNativeTarget "KYCircularViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE59259E1986921300B84B22 /* Debug */,
+				BE59259F1986921300B84B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE5925A01986921300B84B22 /* Build configuration list for PBXNativeTarget "KYCircularViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE5925A11986921300B84B22 /* Debug */,
+				BE5925A21986921300B84B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE5925751986921300B84B22 /* Project object */;
+}
