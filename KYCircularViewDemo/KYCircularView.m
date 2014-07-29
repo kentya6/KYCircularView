@@ -40,7 +40,7 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self sharedSetup];
+        [self setup];
     }
     return self;
 }
@@ -48,12 +48,15 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self sharedSetup];
+        [self setup];
     }
     return self;
 }
 
-- (void)sharedSetup {
+- (void)setup {
+    self.progressChangedBlock = nil;
+    _animationDuration = 1.0f;
+    
     self.progressView = [[KYCircularShapeView alloc] initWithFrame:self.bounds];
     self.progressView.shapeLayer.fillColor = [UIColor clearColor].CGColor;
     self.progressView.shapeLayer.path = self.path.CGPath;
@@ -70,14 +73,7 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
     _gradientLayer.mask = self.progressView.shapeLayer;
     [self.layer addSublayer:_gradientLayer];
     
-    [self resetDefaults];
-}
-
-- (void)resetDefaults {
-    self.progressChangedBlock = nil;
-    _animationDuration = 1.0f;
-    
-    [self tintColorDidChange];
+    self.progressView.shapeLayer.strokeColor = self.tintColor.CGColor;
 }
 
 #pragma mark - Public Accessors
@@ -105,25 +101,6 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
 - (void)setEndAngle:(double)endAngle {
     _endAngle = endAngle;
     self.progressView.endAngle = endAngle;
-}
-
-#pragma mark - Color
-
-- (void)tintColorDidChange {
-    [super tintColorDidChange];
-    
-    UIColor *tintColor = self.tintColor;
-    
-    self.progressView.shapeLayer.strokeColor = tintColor.CGColor;
-    self.progressView.shapeLayer.borderColor = tintColor.CGColor;
-}
-
-#pragma mark - Layout
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    self.progressView.frame = self.bounds;
 }
 
 #pragma mark - Progress Control
@@ -175,7 +152,7 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
     CFTimeInterval timerInterval =  self.animationDuration / ABS(_progressDifference);
     self.progressUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:timerInterval
                                                                   target:self
-                                                                selector:@selector(onValueLabelUpdateTimer:)
+                                                                selector:@selector(onProgressUpdateTimer:)
                                                                 userInfo:nil
                                                                  repeats:YES];
     _progress = progress;
@@ -188,12 +165,8 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
     self.progressUpdateTimer = nil;
 }
 
-- (void)onValueLabelUpdateTimer:(NSTimer *)timer {
-    if (_progressDifference > 0) {
-        _progressDifference--;
-    } else {
-        _progressDifference++;
-    }
+- (void)onProgressUpdateTimer:(NSTimer *)timer {
+    (_progressDifference > 0) ? _progressDifference-- : _progressDifference++;
 }
 
 #pragma mark - CAAnimationDelegate
@@ -241,17 +214,13 @@ NSString *const kShapeViewAnimation = @"kShapeViewAnimation";
     CGFloat width = self.frame.size.width;
     
     return [UIBezierPath bezierPathWithArcCenter:CGPointMake(width/2.0f, width/2.0f)
-                                          radius:width/2.0f - self.shapeLayer.lineWidth - 0.5
+                                          radius:width/2.0f - self.shapeLayer.lineWidth
                                       startAngle:self.startAngle
                                         endAngle:self.endAngle
                                        clockwise:YES];
 }
 
 - (void)updateProgress:(float)progress {
-    [self updatePath:progress];
-}
-
-- (void)updatePath:(float)progress {
     [CATransaction begin];
     [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
     self.shapeLayer.strokeEnd = progress;
